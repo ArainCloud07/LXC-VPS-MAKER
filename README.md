@@ -1,11 +1,11 @@
 First Install Lxc+Lxd From This Script
-### Installation
+### Run This Installation For Installing Dependencis Like LXC And LXD Etc.
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/hopingboyz/lxc-installer/main/lxc-installer.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/ArainCloud07/LXC-VPS-MAKER/refs/heads/main/lxc-installer.sh)
 ```
 And This Is The Script For LXC-VPS-MAKER
-### Installation
+### Run This Installation For Creating VPS.
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/ArainCloud07/LXC-VPS-MAKER/refs/heads/main/vms.sh)
