@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-#=========================================================
-#   LXC + LXD AUTO INSTALLER FOR UBUNTU & DEBIAN
-#   Dont Copy This Script
-#   Author: HopingBoyz
-#=========================================================
 
-# --- Advanced Colors and Styles ---
 GREEN="\e[32m"
 YELLOW="\e[33m"
 CYAN="\e[36m"
@@ -22,7 +16,7 @@ UNDERLINE="\e[4m"
 BLINK="\e[5m"
 RESET="\e[0m"
 
-# Colorful background for better visual appeal
+
 BG_BLUE="\e[44m"
 BG_GREEN="\e[42m"
 BG_YELLOW="\e[43m"
@@ -30,16 +24,16 @@ BG_RED="\e[41m"
 BG_MAGENTA="\e[45m"
 BG_CYAN="\e[46m"
 
-# Terminal dimensions
+
 TERM_WIDTH=$(tput cols 2>/dev/null || echo 80)
 TERM_HEIGHT=$(tput lines 2>/dev/null || echo 24)
 
-# --- Installation Configuration ---
+
 INSTALL_LOG="/tmp/lxd_installer.log"
 MAX_RETRIES=3
 RETRY_DELAY=5
 
-# Logging functions
+
 init_log() {
     echo "=== LXC/LXD Installation Log ===" > "$INSTALL_LOG"
     echo "Started: $(date)" >> "$INSTALL_LOG"
@@ -53,7 +47,7 @@ log_message() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] [$level] $message" >> "$INSTALL_LOG"
 }
 
-# --- Advanced Progress Bar with Multiple Styles ---
+
 _progress_bar() {
     local duration=${1}
     local style="${2:-block}"
@@ -94,7 +88,6 @@ _progress_bar() {
     printf "${BLUE}│${RESET} ${GREEN}${BOLD}✓ Complete!${RESET}\n"
 }
 
-# --- Advanced Spinner with Dynamic Styles ---
 _spinner_pid=""
 _current_spinner_style=""
 _spinner_message=""
@@ -304,7 +297,7 @@ ${RESET}
 EOF
 
     # Animated subtitle with rainbow effect
-    local subtitle="AUTO LXC + LXD INSTALLER MADE WITH ❤️ BY HOPINGBOYZ"
+    local subtitle="AUTO LXC + LXD INSTALLER MADE WITH ❤️ BY Arain Cloud Team "
     local rainbow_colors=("$RED" "$YELLOW" "$GREEN" "$CYAN" "$BLUE" "$MAGENTA")
     
     printf "\n"
@@ -355,7 +348,7 @@ run_with_spinner() {
     done
 }
 
-# --- System Information Display ---
+
 show_system_info() {
     print_box "SYSTEM INFORMATION" "BLUE" "double"
     
